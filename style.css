@@ -1,0 +1,72 @@
+#canvas{
+    border: 1px solid #000000;
+    margin-left: auto;
+    margin-right: auto; 
+    display: block;
+    border-radius: 2px;
+}
+
+
+#pos{
+    /* margin-left: auto;
+    margin-right: auto;
+    display: block; */
+    text-align: center;
+    font-style: italic;
+    font-size: 50px;
+}
+
+#btn{
+    font-size: large;
+    /* color: #E8476A; */
+    width: 200px;
+    height:60px;
+    background-color: #FFA01B;
+    border-radius: 20px;
+    text-shadow: 20px #000000;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Wendy+One&display=swap');
+
+/* body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50em;
+} */
+
+#title {
+  font-family: 'Wendy One', sans-serif;
+  color:  #FFA01B;
+  cursor: pointer;
+  position: relative;
+  text-shadow:
+    -6px 6px 0 #E8476A,
+    -9px 9px 0 purple;
+  font-size:50px;
+  text-align: center;
+}
+
+#title:after {
+  content: '';
+  position:absolute;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+  height: 4px;
+  bottom: -10px;
+  left: 27%;
+  transform: scaleX(0);
+  box-shadow:
+     0 5px 0 #E8476A,
+    0 10px 0 purple;
+  background: #FFA01B ;
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+
+#title:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
